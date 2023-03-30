@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<title>Task detail</title>
+	</head>
+	<body class="h-100 d-flex flex-column justify-content-between">
+		<!-- Header- start -->
+		<header class="py-2">
+			<div class="container-fluid px-3">
+				<div
+					class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap"
+				>
+					<a href="../index.html">
+						<img src="../images/logo.png" alt="Site logo" width="250" />
+					</a>
+					<div class="fs-5 ms-auto now-date-js">
+						<span class="now-day-js"></span>
+						<span class="now-hour-js fw-bold"></span>
+						<span class="now-minute-js fw-bold"></span>
+						<span class="now-second-js fw-bold"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main start -->
+		<main class="flex-grow-1 mb-5">
+			<div class="container-fluid px-3">
+				<!-- Navigation bar va info qismini o'rab turuvchi -->
+				<div class="row">
+					<!-- Navigation bar -->
+					<div
+						class="col-12 col-md-3 d-flex d-md-block flex-wrap justify-content-between"
+					>
+						<a
+							class="d-flex align-items-center my-2 my-md-5 px-3 text-decoration-none text-black-50"
+							href="../index.html"
+						>
+							<img src="../images/topshiriq-icon.png" alt="icon" width="25" />
+							<span class="fs-5 mx-3">Topshiriqlar</span>
+						</a>
+						<a
+							class="d-flex align-items-center my-2 my-md-5 px-3 text-decoration-none text-black-50"
+							href="../chat.html"
+						>
+							<img src="../images/chat-icon.png" alt="icon" width="25" />
+							<span class="fs-5 mx-3">Chat</span>
+						</a>
+						<a
+							class="d-flex align-items-center my-2 my-md-5 px-3 text-decoration-none text-primary"
+							href="../task-detail.html"
+						>
+							<img src="../images/jamoa-icon.png" alt="icon" width="25" />
+							<span class="fs-5 mx-3">Jamoa</span>
+						</a>
+						<a
+							class="d-flex align-items-center my-2 my-md-5 px-3 text-decoration-none text-black-50"
+							href="../calendar.html"
+						>
+							<img src="../images/calendar-icon.png" alt="icon" width="25" />
+							<span class="fs-5 mx-3">Kalendar</span>
+						</a>
+						<a
+							class="d-flex align-items-center my-2 my-md-5 px-3 text-decoration-none text-black fw-medium"
+							href="../author-pages/profile.html"
+						>
+							<img src="../images/user-icon.png" alt="icon" width="25" />
+							<span class="fs-5 mx-3">Chala Developer</span>
+						</a>
+					</div>
+
+					<!-- Info bo'limi -->
+					<div class="col-12 col-md-9 mt-4 mt-md-0">
+						<h2>Tekshirish uchun topshirilgan ishlar</h2>
+						<!-- Baholanmagan ishlar -->
+						<div class="shadow rounded-4 p-4">
+							<span class="text-danger"
+								>Ushbu topshiriq hali tekshirilib baholanmagan!</span
+							>
+							<div class="d-flex flex-wrap my-3">
+								<div class="d-flex align-items-center fs-6 fw-medium me-5 my-2">
+									<img src="../images/user-icon.png" alt="img" width="18" />
+									<span class="ms-2">Harry Maguaer</span>
+								</div>
+								<a
+									class="text-decoration-none fs-6 text-dark fw-medium d-flex align-items-center me-5 my-2"
+									href="#"
+								>
+									<img src="../images/eye-open.png" alt="img" width="20" />
+									<span class="ms-1">Ko’rish</span>
+								</a>
+								<a
+									class="text-decoration-none fs-6 text-dark fw-medium d-flex align-items-center my-2"
+									href="#"
+								>
+									<img src="../images/download.png" alt="img" width="20" />
+									<span class="ms-1">Yuklab olish</span>
+								</a>
+							</div>
+							<h4>kun.uz bosh sahifasi dizaynini qilish</h4>
+							<p class="m-0 mt-3 fs-5">
+								Topshiriq uchun berish mukin bo’lgan maximum ball:
+								<span class="fw-medium">10 ball</span>
+							</p>
+							<button
+								class="btn btn-primary d-block ms-auto"
+								data-bs-toggle="modal"
+								data-bs-target="#rating"
+							>
+								Baholash
+							</button>
+						</div>
+
+						<!-- Statistika -->
+						<div class="shadow rounded-4 p-4 mt-4">
+							<div class="d-flex justify-content-between flex-wrap">
+								<h5>Designers guruhi statistikasi</h5>
+								<div class="d-flex align-items-start">
+									<img src="../images/emote-smile.png" alt="img" width="22" />
+									<span class="ms-2"
+										>Chala Developer jamoada 1-o’rin , yaxshi natija</span
+									>
+								</div>
+							</div>
+							<p class="fs-5 my-4">
+								Jami bu oyda ushbu guruhga <span>15</span> ta topshiriq
+								berilgan.
+							</p>
+
+							<div
+								class="d-flex justify-content-center justify-content-sm-start flex-wrap"
+							>
+								<div
+									class="d-flex justify-content-center align-items-center p-3 rounded me-2 flex-column text-center bg-light my-1"
+								>
+									<b class="fw-bold">1</b>
+									<img class="my-2" src="../images/harry.png" alt="img" />
+									<h6>Siz</h6>
+									<p class="m-0"><span class="fw-bold">15/</span>14</p>
+								</div>
+								<div
+									class="d-flex justify-content-center align-items-center p-3 rounded me-2 flex-column text-center bg-light my-1"
+								>
+									<b class="fw-bold">2</b>
+									<img class="my-2" src="../images/harry.png" alt="img" />
+									<h6>Chala <span class="d-block">Developer</span></h6>
+									<p class="m-0"><span class="fw-bold">15/</span>14</p>
+								</div>
+								<div
+									class="d-flex justify-content-center align-items-center p-3 rounded me-2 flex-column text-center bg-light my-1"
+								>
+									<b class="fw-bold">2</b>
+									<img class="my-2" src="../images/harry.png" alt="img" />
+									<h6>Chala <span class="d-block">Developer</span></h6>
+									<p class="m-0"><span class="fw-bold">15/</span>14</p>
+								</div>
+								<div
+									class="d-flex justify-content-center align-items-center p-3 rounded me-2 flex-column text-center bg-light my-1"
+								>
+									<b class="fw-bold">2</b>
+									<img class="my-2" src="../images/harry.png" alt="img" />
+									<h6>Chala <span class="d-block">Developer</span></h6>
+									<p class="m-0"><span class="fw-bold">15/</span>14</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-between mt-4">
+							<div class="col-12 col-md-5 shadow rounded-4 mt-4 mt-md-0 p-4">
+								<h2>72%</h2>
+								<p>Joriy oydagi guruh natijasi</p>
+								<img class="img-fluid" src="../images/chart.png" alt="img" />
+							</div>
+							<div class="col-12 col-md-6 shadow rounded-4 mt-4 mt-md-0 p-4">
+								<h4>Guruhning topshiriqlarni topshirish tezligi:</h4>
+								<img src="../images/rabbit.png" alt="img" />
+								<p>
+									<span class="fw-bold">Quyon</span> - topshiriqlar belgilangan
+									vaqtga qolmasdan topshiriladi. Topshiriqlarni iloji boricha
+									o’z vaqtida bajarishga harakat qiling.
+								</p>
+								<p>
+									Boshqa yana qanday tezliklar borligini
+									<a
+										class="text-decoration-none fw-medium"
+										href="#"
+										data-bs-toggle="modal"
+										data-bs-target="#all-speed"
+										>tekshirish.</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer start -->
+		<footer class="py-4 border-top border-2">
+			<div class="container-fluid px-3">
+				<div class="d-flex justify-content-between align-items-center">
+					<span>RoboCode IT Academy 2023</span>
+
+					<div class="icons d-flex align-items-center">
+						<a class="text-decoration-none mx-2" href="#">
+							<img src="../images/facebook-icon.png" alt="icon" />
+						</a>
+						<a class="text-decoration-none mx-2" href="#">
+							<img src="../images/instagram-icon.png" alt="icon" />
+						</a>
+						<a class="text-decoration-none mx-2" href="#">
+							<img src="../images/telegram-icon.png" alt="icon" />
+						</a>
+						<a class="text-decoration-none mx-2" href="#">
+							<img src="../images/youtube-icon.png" alt="icon" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Baholash modal -->
+		<div
+			class="modal fade"
+			id="rating"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header align-items-start">
+						<div>
+							<h3 class="modal-title fs-4" id="staticBackdropLabel">
+								Baholash formasi
+							</h3>
+							<p class="m-0">
+								Topshiriqni to’liq tekshirmagunizga qadar uni baholamang!
+							</p>
+						</div>
+
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form method="post">
+							<input
+								class="form-control"
+								type="number"
+								placeholder="ball"
+								required
+							/>
+							<textarea
+								class="form-control mt-3"
+								cols="10"
+								rows="5"
+								placeholder="Topshiriq yuzasidan tushuntirish"
+							></textarea>
+							<button class="btn btn-primary mt-3" type="submit" data-bs-toggle="modal"
+              data-bs-target="#success">
+								Baholash
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Info modal -->
+		<div
+			class="modal fade"
+			id="success"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">
+							<span class="fw-bold">Harry Maguaer</span> uchun ball berildi !
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="all-speed"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header align-items-start">
+						<h4 class="modal-title fs-5" id="exampleModalLabel">
+							Qanday topshiriqlarni bajarish tezliklari bor deysizmi ?
+						</h4>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="d-flex align-items-start border-bottom px-3 py-2">
+							<img src="../images/snail.png" alt="snail img" width="40" />
+							<p class="m-0 ms-3">
+								<span class="fw-bold">Shilliqurt</span> - topshiriqlar
+								belgilangan vaqtidan o’tib ketib keyin topshiriladi.
+							</p>
+						</div>
+						<div class="d-flex align-items-start border-bottom px-3 py-2">
+							<img src="../images/turtle.png" alt="turtle img" width="40" />
+							<p class="m-0 ms-3">
+								<span class="fw-bold">Toshbaqa</span> - topshiriqlarni
+								aksariyati belgilangan vaqt oxirida topshiriladi.
+							</p>
+						</div>
+						<div class="d-flex align-items-start border-bottom px-3 py-2">
+							<img src="../images/rabbit.png" alt="rabbit img" width="40" />
+							<p class="m-0 ms-3">
+								<span class="fw-bold">Quyon</span> - topshiriqlar belgilangan
+								vaqtga qolmasdan topshiriladi.
+							</p>
+						</div>
+						<div class="d-flex align-items-start px-3 py-2">
+							<img src="../images/leopard.png" alt="leapard img" width="40" />
+							<p class="m-0 ms-3">
+								<span class="fw-bold">Gepard</span> - topshiriqlar berilganidan
+								keyinoq tezlikda topshiriladi.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Scripts -->
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+</html>
